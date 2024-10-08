@@ -4,47 +4,76 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  img {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+img {
     max-width: 100%;
-  }
-  
-  /* COMMON */
-  /* Layout */
-  .container {
+}
+
+/* COMMON */
+/* Layout */
+.container {
     width: 80%;
     max-width: 1100px;
     margin: 0 auto;
     /* debug */
-    border: 1px solid black;
-    min-height: 300px;
-  }
-  
-  .section {
+    /* border: 1px solid black;
+    min-height: 300px; */
+}
+
+.section {
     padding: 30px 0;
     border: 1px solid black;
-  }
-  
-.row{
+}
+
+.row {
     display: flex;
     justify-content: space-between;
     row-gap: 15px;
     flex-wrap: wrap;
 }
 
-  .col{
+.col {
     width: calc(95% /3);
 
-    border: 2px solid blue;
-    min-height: 200px;
-  }
+    /* border: 2px solid blue;
+    min-height: 200px; */
+}
 
-.card{
+.card {
     position: relative;
 }
 
-.discount{
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+
+.image1 {
+    position: absolute;
+    opacity: 1;
+}
+
+.image2 {
+    position: absolute;
+    opacity: 0;
+}
+
+.img-container:hover .image1 {
+    opacity: 0;
+}
+
+.img-container:hover .image2 {
+    opacity: 1;
+}
+
+.discount {
     position: absolute;
     bottom: 30px;
     background-color: red;
@@ -55,9 +84,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 
-.like{
+.like {
     position: absolute;
     right: 0;
     top: 10px;
@@ -70,11 +100,12 @@
     font-size: 25px;
 }
 
-.like:hover{
+.like:hover {
     color: red;
 }
 
-.sostenibilita{
+
+.sostenibilita {
     position: absolute;
     bottom: 30px;
     left: 55px;
@@ -86,9 +117,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 
-.sostenibilita2{
+.sostenibilita2 {
     position: absolute;
     bottom: 30px;
     background-color: hsl(120deg 100% 25.1%);
@@ -99,4 +131,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.info {
+    list-style: none;
+}
+
+.info :nth-child(3) {
+    color: red;
+}
+
+.oldprice {
+    color: black;
+    text-decoration: line-through;
 }
