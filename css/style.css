@@ -1,0 +1,102 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  /* COMMON */
+  /* Layout */
+  .container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    /* debug */
+    border: 1px solid black;
+    min-height: 300px;
+  }
+  
+  .section {
+    padding: 30px 0;
+    border: 1px solid black;
+  }
+  
+.row{
+    display: flex;
+    justify-content: space-between;
+    row-gap: 15px;
+    flex-wrap: wrap;
+}
+
+  .col{
+    width: calc(95% /3);
+
+    border: 2px solid blue;
+    min-height: 200px;
+  }
+
+.card{
+    position: relative;
+}
+
+.discount{
+    position: absolute;
+    bottom: 30px;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    width: 50px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.like{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.like:hover{
+    color: red;
+}
+
+.sostenibilita{
+    position: absolute;
+    bottom: 30px;
+    left: 55px;
+    background-color: hsl(120deg 100% 25.1%);
+    color: white;
+    font-size: 15px;
+    width: 100px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sostenibilita2{
+    position: absolute;
+    bottom: 30px;
+    background-color: hsl(120deg 100% 25.1%);
+    color: white;
+    font-size: 15px;
+    width: 100px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
